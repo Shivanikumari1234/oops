@@ -1,0 +1,29 @@
+// Constructor Overloading
+public class A85 {
+    int a;double b;String c;
+    A85()
+    {
+        a=100;b=45.32;c="ankit";
+    }
+    A85(int x)
+    {
+        a=x;
+    }
+    A85(double y,String z)
+    {
+        b=y;c=z;
+    }
+}
+class B2
+{
+    public static void main(String[] args)
+    {
+        A85 r=new A85();
+        A85 r2=new A85(10);
+        A85 r3=new A85(23.89,"Ankush ");
+        System.out.println(r.a+" "+r.b+" "+r.c );
+        System.out.println(r2.a );
+        System.out.println(r3.b+" "+r3.c );
+
+    }
+}
