@@ -1,0 +1,30 @@
+abstract class programming {
+    public abstract void Developer();
+}
+class HTML extends programming
+{
+    @Override
+    public void Developer()
+    {
+        System.out.println("Tim Berners Lee");
+    }
+}
+class JAVA extends programming
+{
+    @Override
+    public void Developer()
+    {
+        System.out.println("James Gosling");
+    }
+}
+class main
+{
+    public static void main(String[]args)
+    {
+        HTML h=new HTML();
+        h.Developer();
+        JAVA j=new JAVA();
+        j.Developer();
+
+    }
+}
